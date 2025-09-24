@@ -21,7 +21,7 @@ class GeminiChatbot:
         genai.configure(api_key=api_key)
         
         # Initialize the model - using correct model name
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        self.model = genai.GenerativeModel('gemini-2.5-flash')
         
         # Start a chat session
         self.chat_session = self.model.start_chat(history=[])
